@@ -1,0 +1,397 @@
+:root {
+  --slate: #434455;
+  --navy-blue: #2e2f42;
+  --cornflower: #e7e9fc;
+  --iris: #4d5ae5;
+  --ocean: #404bbf;
+  --white: #fff;
+  --cloud: #f4f4fd;
+}
+
+/**
+  |============================
+  | Base styles
+  |============================
+*/
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--slate);
+  background: var(--white);
+}
+
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.placement-in-a-line {
+  display: flex;
+  flex-direction: row;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.section {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/*
+=========================================
+      Header
+=========================================
+*/
+
+.top-line {
+  display: flex;
+  height: 72px;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.nav {
+  align-items: center;
+}
+
+.logo {
+  width: 115px;
+  margin-right: 76px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--iris);
+}
+
+.logo-studio {
+  color: var(--navy-blue);
+}
+
+.navigation-box {
+  gap: 40px;
+}
+
+.text-link {
+  display: block;
+  padding: 24px 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue);
+}
+
+.liend {
+  margin-right: 0;
+}
+
+.text-link:hover,
+.text-link:focus {
+  color: var(--ocean);
+}
+
+.contacts {
+  font-style: normal;
+}
+
+.contact-nav {
+  gap: 40px;
+}
+
+.contact-box {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--slate);
+}
+
+.contact-box:hover,
+.contact-box:focus {
+  color: var(--ocean);
+}
+
+/* Main
+=============================================
+   1. Effective Solutions for Your Business
+=============================================
+*/
+.title-background-box {
+  padding: 188px 0;
+  background: var(--navy-blue);
+}
+.title-box {
+  width: 1358px;
+  padding: 188px auto;
+}
+
+.main-title {
+  max-width: 496px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 48px;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--white);
+}
+
+.main-button {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--white);
+  border: none;
+  background-color: var(--iris);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.main-button:hover,
+.main-button:focus {
+  background-color: var(--ocean);
+  cursor: pointer;
+}
+
+/* 
+=============================================
+   2. Advantages
+=============================================
+*/
+.main-advantages-section {
+  padding: 120px 0;
+}
+
+.advantages-gap {
+  gap: 24px;
+}
+
+.advantages-card {
+  width: calc((100% - 72px) / 4);
+}
+
+.advantages-title {
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue);
+}
+
+.advantages-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--slate);
+}
+
+/* 
+=============================================
+   3. What are we doing
+=============================================
+*/
+.main-opportunities-section {
+  padding-bottom: 120px;
+}
+
+.opportunities-title {
+  margin-bottom: 72px;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--navy-blue);
+}
+
+/* 
+=============================================
+   4. Our Team
+=============================================
+*/
+.main-section-team {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: var(--cloud);
+}
+
+.card {
+  text-align: center;
+  background-color: var(--white);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.description-card {
+  padding: 32px 0;
+}
+
+.card-name {
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--navy-blue);
+}
+
+.card-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--slate);
+}
+
+/* 
+=============================================
+   Portfolio
+=============================================
+*/
+.portfolio {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.filter-button-box {
+  margin-bottom: 72px;
+  gap: 24px;
+  justify-content: center;
+}
+
+.portfolio-button {
+  padding: 12px 24px 12px 24px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--iris);
+  background-color: var(--cloud);
+  border-radius: 4px;
+  border: 1px solid var(--cornflower);
+}
+
+.portfolio-button:hover,
+.portfolio-button:focus {
+  color: var(--white);
+  background-color: var(--ocean);
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.project-cards {
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.card-of-project {
+}
+
+.description-project-card {
+  padding: 32px 16px;
+  border: 1px solid var(--cornflower);
+  border-top: none;
+}
+
+.filter-button-box {
+}
+.card-project-name {
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue);
+}
+
+.card-project-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--slate);
+}
+
+/* 
+=============================================
+   Footer
+=============================================
+*/
+.footer-box {
+  padding: 100px 0;
+}
+
+.logo-footer {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.logo-studio-footer {
+  color: var(--cloud);
+}
+
+.footer-box {
+  background: var(--navy-blue);
+}
+
+.paragraf-box {
+  width: 264px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--cloud);
+}
