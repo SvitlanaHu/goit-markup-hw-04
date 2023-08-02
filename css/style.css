@@ -3,6 +3,8 @@
   --navy-blue: #2e2f42;
   --cornflower: #e7e9fc;
   --iris: #4d5ae5;
+  --green: #31d0aa;
+  --light-slate: #8e8f99;
   --ocean: #404bbf;
   --white: #fff;
   --cloud: #f4f4fd;
@@ -229,6 +231,16 @@ img {
   gap: 24px;
 }
 
+.advantages-gap .icon-box {
+  display: flex;
+  width: 264px;
+  height: 112px;
+  margin-bottom: 8px;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cloud);
+}
+
 .advantages-card {
   width: calc((100% - 72px) / 4);
 }
@@ -300,11 +312,54 @@ img {
 }
 
 .card-text {
+  margin-bottom: 8px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--slate);
+}
+
+.social-card {
+  align-items: center;
+  padding-left: 24px;
+}
+
+/**
+  |============================
+  | 5. Customers
+  |============================
+*/
+
+.customers {
+  padding: 120px 0;
+}
+
+.customers-list {
+  gap: 24px;
+}
+
+.customers-list .customers-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 168px;
+  height: 88px;
+  border-radius: 50%;
+  background-color: var(--white);
+  color: var(--light-slate);
+  border-radius: 4px;
+  border: 1px solid var(--light-slate);
+  flex-shrink: 0;
+}
+
+.customers-link:hover {
+  color: var(--ocean);
+  border: 1px solid var(--ocean);
+}
+
+.customers-icon {
+  color: var(--ocean);
 }
 
 /* 
@@ -437,13 +492,5 @@ img {
 }
 
 .social-links .link-icons:hover {
-  background-color: var(--cloud);
-}
-
-.social-links .icon {
-  fill: var(--cloud);
-}
-
-.social-links .link-icons:hover .icon {
-  fill: var(--iris);
+  background-color: var(--green);
 }
