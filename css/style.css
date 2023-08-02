@@ -386,6 +386,10 @@ img {
   padding: 100px 0;
 }
 
+.footer-container {
+  gap: 120px;
+}
+
 .logo-footer {
   display: inline-block;
   margin-bottom: 16px;
@@ -404,4 +408,42 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--cloud);
+}
+
+.social-title {
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--white);
+}
+
+.social-links {
+  display: flex;
+  gap: 16px;
+  flex-shrink: 0;
+  align-self: flex-end;
+}
+
+.social-links .link-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--iris);
+}
+
+.social-links .link-icons:hover {
+  background-color: var(--cloud);
+}
+
+.social-links .icon {
+  fill: var(--cloud);
+}
+
+.social-links .link-icons:hover .icon {
+  fill: var(--iris);
 }
