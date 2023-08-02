@@ -353,13 +353,13 @@ img {
   flex-shrink: 0;
 }
 
-.customers-link:hover {
-  color: var(--ocean);
+.customers-list .customers-link:hover {
+  fill: var(--ocean);
   border: 1px solid var(--ocean);
 }
 
-.customers-icon {
-  color: var(--ocean);
+.customers-link:hover .customers-icon {
+  color: var(--ocean) !important;
 }
 
 /* 
