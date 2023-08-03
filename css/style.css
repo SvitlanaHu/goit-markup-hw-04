@@ -92,6 +92,8 @@ img {
       Header
 =========================================
 */
+.header {
+}
 
 .top-line {
   display: flex;
@@ -321,7 +323,8 @@ img {
   transition: box-shadow 250ms cubic-bezier(0.4 0 0.2 1);
 }
 
-.card:hover .link-icons {
+.card:hover .link-icons,
+.card:focus .link-icons {
   background-color: var(--ocean);
 }
 
@@ -380,14 +383,15 @@ img {
   flex-shrink: 0;
 }
 
-.customers-list .customers-link:hover {
+.customers-list .customers-link:hover,
+.customers-list .customers-link:focus {
   fill: var(--ocean);
   border: 1px solid var(--ocean);
 }
 
-.customers-link:hover .customers-icon {
-  color: var(--ocean) !important;
-  fill: var(--ocean) !important;
+.customers-link::after .customers-icon {
+  color: var(--ocean);
+  fill: var(--ocean);
 }
 
 /* 
@@ -433,7 +437,8 @@ img {
   row-gap: 48px;
 }
 
-.card-of-project:hover {
+.card-of-project:hover,
+.card-of-project:focus {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
@@ -522,6 +527,7 @@ img {
   background-color: var(--iris);
 }
 
-.social-links .link-icons:hover {
+.social-links .link-icons:hover,
+.social-links .link-icons:focus {
   background-color: var(--green);
 }
