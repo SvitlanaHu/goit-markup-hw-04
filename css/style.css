@@ -93,6 +93,9 @@ img {
 =========================================
 */
 .header {
+  position: sticky;
+  top: 0;
+  background-color: var(--white);
 }
 
 .top-line {
@@ -138,6 +141,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--navy-blue);
+  transition-property: color;
 }
 
 .text-link:hover,
@@ -173,6 +177,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate);
+  transition-property: color;
 }
 
 .contact-box:hover,
@@ -232,6 +237,7 @@ img {
   background-color: var(--iris);
   border-radius: 4px;
   cursor: pointer;
+  transition-property: background-color;
 }
 
 .main-button:hover,
@@ -321,6 +327,7 @@ img {
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
   transition: box-shadow 250ms cubic-bezier(0.4 0 0.2 1);
+  transition-property: background-color;
 }
 
 .card:hover .link-icons,
@@ -377,10 +384,11 @@ img {
   padding: 16px 32px;
   border-radius: 50%;
   background-color: var(--white);
-  color: var(--light-slate);
+  fill: var(--light-slate);
   border-radius: 4px;
   border: 1px solid var(--light-slate);
   flex-shrink: 0;
+  transition-property: border, fill, color;
 }
 
 .customers-list .customers-link:hover,
@@ -389,8 +397,8 @@ img {
   border: 1px solid var(--ocean);
 }
 
-.customers-link::after .customers-icon {
-  color: var(--ocean);
+.customers-link:hover .customers-icon,
+.customers-link:focus .customers-icon {
   fill: var(--ocean);
 }
 
@@ -412,15 +420,18 @@ img {
 
 .portfolio-button {
   padding: 12px 24px 12px 24px;
+
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+
   color: var(--iris);
   background-color: var(--cloud);
   border-radius: 4px;
   border: 1px solid var(--cornflower);
+  transition-property: background-color, color, border;
 }
 
 .portfolio-button:hover,
@@ -435,6 +446,7 @@ img {
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
+  transition-property: box-shadow;
 }
 
 .card-of-project:hover,
@@ -525,6 +537,7 @@ img {
   height: 40px;
   border-radius: 50%;
   background-color: var(--iris);
+  transition-property: background-color;
 }
 
 .social-links .link-icons:hover,
