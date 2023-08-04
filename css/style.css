@@ -247,15 +247,18 @@ img {
   cursor: pointer;
 }
 
+/**
+  |============================
+  | Modal window
+  |============================
+*/
+/*
 .data-modal {
   position: fixed;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
-
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -289,7 +292,7 @@ img {
   max-width: 100%;
 
   opacity: 0;
-}
+}*/
 
 .data-modal-close {
   position: absolute;
@@ -304,8 +307,7 @@ img {
   align-items: center;
   justify-content: center;
 }
-
-.icon-modal {
+*/ .icon-modal {
   position: absolute;
   flex-shrink: 0;
   fill: var(--slate);
