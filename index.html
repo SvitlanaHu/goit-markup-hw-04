@@ -91,7 +91,22 @@
       <section class="title-background-box section">
         <div class="container title-box">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
-          <button class="main-button" type="button">Order Service</button>
+          <button class="main-button data-modal-open" type="button">
+            Order Service
+          </button>
+
+          <!-- Modal window. -->
+          <div data-modal class="data-modal is-hidden">
+            <div class="wrap-window">
+              <div modal-card class="modal-card">
+                <button type="button" data-modal-close class="data-modal-close">
+                  <svg class="icon-modal" width="24" height="24">
+                    <use href="#icon-close"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -102,6 +117,11 @@
         style="position: absolute; width: 0; height: 0; overflow: hidden"
       >
         <defs>
+          <symbol id="icon-close" viewBox="0 0 24 24">
+            <path
+              d="M16 8.80571L15.1943 8L12 11.1943L8.80571 8L8 8.80571L11.1943 12L8 15.1943L8.80571 16L12 12.8057L15.1943 16L16 15.1943L12.8057 12L16 8.80571Z"
+            />
+          </symbol>
           <symbol id="icon-f-facebook" viewBox="0 0 32 32">
             <path
               d="M21.329 5.313h2.921V.225C23.746.156 22.013 0 19.994 0c-4.212 0-7.097 2.649-7.097 7.519V12H8.249v5.688h4.648V32h5.699V17.689h4.46l.708-5.688h-5.169V8.082c.001-1.644.444-2.769 2.735-2.769z"
