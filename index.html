@@ -91,22 +91,13 @@
       <section class="title-background-box section">
         <div class="container title-box">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
-          <button class="main-button data-modal-open" type="button">
+          <button
+            data-modal-open
+            class="main-button data-modal-open"
+            type="button"
+          >
             Order Service
           </button>
-
-          <!-- Modal window. -->
-          <div data-modal class="data-modal is-hidden">
-            <div class="wrap-window">
-              <div class="modal-card">
-                <button type="button" data-modal-close class="data-modal-close">
-                  <svg class="icon-modal" width="24" height="24">
-                    <use href="./images/icons.svg#icon-close"></use>
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -681,7 +672,7 @@
                 target="_blank"
               >
                 <svg class="icon" width="23" height="23">
-                  <use href="./images/icons.svg#icon-f-instagram"></use>
+                  <use href="./images/icons.svg #icon-f-instagram"></use>
                 </svg>
               </a>
             </li>
@@ -722,6 +713,17 @@
         </div>
       </div>
     </footer>
+
+    <!-- Modal window. -->
+    <div data-modal class="data-modal is-hidden">
+      <div class="modal-card">
+        <button data-modal-close type="button" class="data-modal-close">
+          <svg class="icon-modal" width="8" height="8">
+            <use href="#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
