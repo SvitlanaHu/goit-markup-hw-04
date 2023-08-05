@@ -422,8 +422,8 @@ img {
   fill: var(--light-slate);
 }
 
-.customers-link-list:hover .customers-link,
-.customers-link-list:focus .customers-link {
+.customers-link-list:hover,
+.customers-link-list:focus {
   fill: var(--ocean);
   color: var(--ocean);
   border-color: var(--ocean);
