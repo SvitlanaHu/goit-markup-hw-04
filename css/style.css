@@ -171,8 +171,8 @@ img {
   font-style: normal;
 }
 
-.contact-nav {
-  gap: 40px;
+.contacts {
+  font-style: normal;
 }
 
 .contact-box {
@@ -195,6 +195,7 @@ img {
 */
 .title-background-box {
   max-width: 1440px;
+  margin: 0 auto;
   padding: 188px 0;
   background: var(--navy-blue);
   background-image: linear-gradient(
